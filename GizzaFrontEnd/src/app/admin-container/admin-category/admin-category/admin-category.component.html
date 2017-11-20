@@ -1,0 +1,82 @@
+<div class="container">
+  <div class="sub-container">
+    <div class=" flex-container " style="text-align:center;margin-bottom: 15px; margin-top:15px; " >
+      <div class="btn-group " data-toggle="buttons-radio ">
+        <a type="button" class="btn btn-default" (click)="getCategories('pizza')" >PIZZA</a>
+        <a type="button" class="btn btn-default" (click)="getCategories('dessert')" >DESSERT</a>
+        <a type="button" class="btn btn-default" (click)="getCategories('boisson')" >BOISSON</a>
+      </div>
+    </div>
+  </div>
+  <div class="sub-container list">
+    <ul class="list-group" >
+      <li class="list-group-item addCategory">
+        <button type="button" class="btn btn-default addCat" data-toggle="modal" data-target="#myModal">
+          Ajouter une catégorie.
+        </button>
+      </li>
+      <li class="list-group-item category" *ngFor="let cat of categories">
+        <div class="row ">
+          <div class="col-sm-8"> <span class="quantity">{{cat.libelle}}  </span></div>
+          <div class="col-sm-4">
+            <button type="button" class="btn btn-default edit" data-toggle="modal" data-target="#myModal">
+              <span class="glyphicon glyphicon-edit"></span>
+            </button>
+            <button type="button" class="btn btn-default delete" data-toggle="modal" data-target="#deleteConfirmation">
+              <span class="glyphicon glyphicon-trash"></span>
+            </button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Ajouter une catégorie dans {{currentType}}</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="category">Catégorie:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="category" placeholder="Catégorie">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="button" class="btn btn-default cancel" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-default submit">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="deleteConfirmation" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Supprimer la catégorie ?</h4>
+      </div>
+      <div class="modal-footer">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="button" class="btn btn-default cancel" data-dismiss="modal">No</button>
+          <button type="submit" class="btn btn-default submit">Yes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

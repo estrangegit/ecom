@@ -1,0 +1,63 @@
+.right-align{
+  text-align: right;
+}
+
+div.alert{
+  margin-bottom: 0px;
+  padding: 2px;
+}
+
+h2{
+  margin-bottom: 30px;
+}
+
+span.glyphicon.glyphicon-info-sign.passwordFormatInfo:hover{
+  cursor: pointer;
+}
+
+div.passwordFormat{
+  position: absolute;
+  background-color: white;
+  border: 1px solid rgb(100, 100, 100);
+  border-radius: 5px;
+  font-size: 0.7em;
+  display: none;
+  margin: 0;
+  padding: 2px;
+  text-align: center;
+  z-index: 2;
+}
+
+div.passwordFormat::after{
+  content:'';
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+div.passwordFormat::after {
+  right: 50%;
+  bottom: 100%;
+  border-left: solid 0.3em transparent;
+  border-bottom: solid 0.5em rgb(100, 100, 100);
+  border-right: solid 0.3em transparent;
+}
+
+div.passwordFormat ul{
+  list-style: none;
+}
+
+.main{
+  font-family: Avenir;
+  font-style: normal;
+  background-color: #FEFDED;
+}
+
+.btn.btn-default{
+  border: none;
+}
+
+
+.jumbotron{
+  background-color: #FDFAD5;
+}

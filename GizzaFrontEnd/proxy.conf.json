@@ -1,0 +1,7 @@
+{
+    "/gizza/api/*": {
+        "target": "http://152.77.78.11",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}

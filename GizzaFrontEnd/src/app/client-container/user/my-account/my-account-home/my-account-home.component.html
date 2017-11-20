@@ -1,0 +1,47 @@
+<div class="col-lg-6 jumbotron">
+  <div class="row">
+    <h2 class="text-center">Voici vos informations</h2>
+  </div>
+  <div class="row">
+    <div class="row">
+      <div class="userAtt col-lg-4 right-align">
+        <b>Prénom: </b>
+      </div>
+      <div class="col-lg-8">
+        {{ userDataService.getFirstName() }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="userAtt col-lg-4 right-align">
+        <b>Nom: </b>
+      </div>
+      <div class="col-lg-8">
+        {{ userDataService.getLastName() }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="userAtt col-lg-4 right-align">
+        <b>Adresse: </b>
+      </div>
+      <div class="col-lg-8">
+        {{ userDataService.getAddress() }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="userAtt col-lg-4 right-align">
+        <b>Téléphone</b>
+      </div>
+      <div class="col-lg-8">
+        {{ userDataService.getPhoneNumber() }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="userAtt col-lg-4 right-align">
+        <b>Email: </b>
+      </div>
+      <div class="col-lg-8">
+        {{ userDataService.getEmail() }}
+      </div>
+    </div>
+  </div>
+</div>

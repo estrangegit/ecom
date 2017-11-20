@@ -1,0 +1,44 @@
+<div class="container">
+  <div id="recapCommandePage">
+    <div class="jumbotron">
+      <div class="row title">
+        <h2 class="text-center">Bravo, votre commande sera bientôt prête!</h2>
+      </div>
+      <div>
+        <ul class="list-group">
+          <li class="list-group-item" *ngFor="let shoppingItem of commande">
+            <div class="row">
+              <div class="col-lg-offset-1
+                          col-lg-10
+                          col-md-offset-1
+                          col-md-10
+                          col-sm-12
+                          col-xs-12">
+                <div class="col-sm-4 text-center">
+                  <span>{{shoppingItem.quantite}}</span>
+                </div>
+                <div class="col-sm-4 text-center"> <span class="itemTitle">{{shoppingItem.nom}}</span></div>
+                <div class="col-sm-4 text-center">
+                  {{shoppingItem.prix * shoppingItem.quantite}} €
+                </div>
+              </div>
+            </div>
+            <hr>
+          </li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h3 class="text-center">Total: {{totalPrice()}} €</h3>
+        </div>
+      </div>
+      <div class="row text-center">
+        <button type="button"
+                (click)="carryOnPurchase()"
+                class="btn btn-default">
+          Retour aux achats
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

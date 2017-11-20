@@ -1,0 +1,22 @@
+#validationPage{
+  margin-top: 50px;
+}
+
+.jumbotron{
+  background-color: #FDFAD5;
+}
+
+.list-group-item{
+  background-color:transparent ;
+  margin-left: -30px;
+  border: none;
+}
+
+ul.list-group{
+  margin-bottom: 0;
+}
+
+.btn.btn-default.reduction{
+  background-color: #d5e4e3;
+  color: #5F5B57;
+}

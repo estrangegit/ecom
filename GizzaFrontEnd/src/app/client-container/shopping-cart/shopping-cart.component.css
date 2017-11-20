@@ -1,0 +1,114 @@
+div.shopping-cart{
+  /*border: 1px solid lightgrey;*/
+  border-radius: 10px;
+  margin-bottom: 0px;
+  background-color: #f9fefe;
+}
+
+div.shopping-cart div.title{
+  background-color: #d5e4e3;
+  color: #5F5B57;
+  text-align: center;
+  padding: 1%;
+  font-family: Myriad;
+  font-style: normal;
+}
+
+div.shopping-cart div.title h3{
+  margin: 0;
+}
+
+div.shopping-cart div.totalPrice div:nth-child(1){
+  text-align: left;
+  color: #5F5B57;
+  font-style: normal;
+  font-family: Avenir;
+  padding-top: 5%;
+}
+
+div.shopping-cart div.totalPrice div:nth-child(2){
+  text-align: right;
+  font-family: Georgia;
+  font-style: normal;
+  font-size: 20px;
+  color: #5F5B57;
+}
+
+div.shopping-cart div.totalPrice div{
+  padding: 2%;
+}
+
+/*Cart Content*/
+div.shopping-cart div.cart-content{
+  margin-top: 5px;
+  padding: 10px;
+  border-top: 1px dotted rgba(200, 200, 200, 1);
+}
+
+.list-group-item{
+  background-color:transparent ;
+  margin-left: -30px;
+  border: none;
+}
+
+.price{
+  text-align: left;
+  font-family: Georgia;
+  font-style: normal;
+  font-size: 14px;
+}
+
+span.quantity{
+  text-align: left;
+  font-family: Georgia;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.itemTitle{
+  text-align: left;
+  font-family: Georgia;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.glyphicon-trash{
+  color: #faa5aa;
+}
+
+/*Reduction*/
+div.shopping-cart div.coupon form{
+  padding-top: 10px;
+  border-top: 1px dotted rgba(200, 200, 200, 1);
+}
+
+div.shopping-cart div.coupon div div:nth-child(2){
+  text-align: right;
+}
+
+div.shopping-cart div.coupon div{
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+div.shopping-cart div.validation{
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.btn.btn-default{
+  border: none;
+  font-family: Avenir;
+  font-style: normal;
+}
+
+.btn.btn-default.reduction{
+  background-color: #d5e4e3;
+  color: #5F5B57;
+}
+
+.form-control{
+  font-family: Avenir;
+  font-style: normal;
+}

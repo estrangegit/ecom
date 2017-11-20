@@ -1,0 +1,36 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand brand">Voir la carte</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li>
+          <a [routerLink]="['/purchase/user/my-account/home']" routerLinkActive="active">
+          Mon compte
+          </a>
+        </li>
+        <li>
+          <a [routerLink]="['/purchase/user/my-account/modification']" routerLinkActive="active">
+            Modifier mes informations
+          </a>
+        </li>
+        <li>
+          <a [routerLink]="['/purchase/user/my-account/order-list']" routerLinkActive="active">
+            Historique des commandes
+          </a>
+        </li>
+        <li>
+          <a [routerLink]="['/purchase']">
+            Poursuivre mes commandes
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

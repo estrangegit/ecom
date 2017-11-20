@@ -1,0 +1,12 @@
+div#myCarousel{
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+div#myCarousel div.item img{
+  width: 100%;
+}
+
+div#myCarousel{
+  border-radius: 10px;
+}

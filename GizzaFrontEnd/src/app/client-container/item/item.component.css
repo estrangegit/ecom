@@ -1,0 +1,245 @@
+.sub-container {
+    text-align: -webkit-center;
+    width: calc(100% - 300px);
+}
+
+
+a.btn-default{
+  border-radius: 0px;
+  border:none;
+  text-transform: uppercase;
+  color: #5F5B57;
+  font-family: Avenir;
+  font-style: normal;
+  background-color: #d5e4e3;
+}
+
+div.card{
+  background-color: #FDFAD5;
+  border-radius: 10px;
+  width: 320px;
+  height: 427px;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+}
+
+.card-title{
+  font-family: Myriad;
+  font-style: normal;
+  color: #5F5B57;
+}
+
+.form-control.input-number{
+  text-align: center;
+  font-family: Avenir;
+  font-style: normal;
+  font-size: 15px;
+  color: #5F5B57;
+  border-radius: 0px;
+  border:none;
+  width: 60px;
+  background-color: #F9FEFE;
+}
+
+.price{
+  font-family: Georgia;
+  font-style: normal;
+  font-size: 25px;
+  color: #5F5B57;
+  text-align: right;
+}
+
+.card-text{
+  font-family: Avenir;
+  font-style: normal;
+  color: #5F5B57;
+}
+
+.btn.btn-default.btn-number{
+  border-radius: 0px;
+  border:none;
+}
+
+.btn.btn-default.btn-number:focus{
+  outline: none;
+}
+.container-card {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.btn.btn-default.btnCart{
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  border:none;
+}
+
+.btn.btn-default.btnCart:focus {
+  outline: none;
+}
+
+.flip-container {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+  background-color: #FDFAD5;
+  border-radius: 10px;
+ /* border-radius: .28571429rem;*/
+  /*box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;*/
+
+}
+
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flip-container,
+.front,
+.back {
+    width: 320px;
+    height: 427px;
+}
+
+.flipper {
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front,
+.back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front {
+    z-index: 2;
+}
+
+.back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    background: #f9fefe;
+}
+
+.front .name {
+    font-size: 2em;
+    display: inline-block;
+    background: rgba(33, 33, 33, 0.9);
+    color: white;
+    font-family: Courier;
+    padding: 5px 10px;
+    border-radius: 5px;
+    bottom: 60px;
+    left: 25%;
+    position: absolute;
+}
+
+.back-title {
+    padding-top: 30px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    font-size: 2em;
+}
+
+.back p {
+    font-style: italic;
+    text-align: center;
+    padding: 0 20px;
+    line-height: 2em;
+}
+
+h5 {
+    font-size: 1.28571429em;
+    font-weight: 700;
+    line-height: 1.2857em;
+    margin: 0;
+}
+
+.card {
+    font-size: 1em;
+    overflow: hidden;
+    padding: 0;
+    /*border: none;*/
+    border-radius: 10px;
+    /*box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;*/
+}
+
+.card-block {
+    font-size: 1em;
+    position: relative;
+    margin: 0;
+    padding: 1em;
+    border: none;
+    box-shadow: none;
+}
+
+.card-img-top {
+    display: block;
+    width:60%;
+    height: auto;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+    width: 100%;
+    border-top: 1px solid #ccc;
+}
+
+.footer.left.p:before {
+    text-transform: uppercase;
+    color: black;
+    position: absolute;
+    top: -12px;
+    width: 200%;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.shopping-cart {
+    position: fixed;
+    top: 350px;
+    right: 50px;
+    background-color: white;
+    width: 300px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .shopping-cart {
+        position: inherit !important;
+    }
+    .sub-container {
+        text-align: -webkit-center;
+        width: 100%;
+    }
+}

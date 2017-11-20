@@ -1,0 +1,91 @@
+.btn-default{
+  border-radius: 0px;
+  border:none;
+  text-transform: uppercase;
+  color: #5F5B57;
+  font-family: Avenir;
+  font-style: normal;
+  background-color: #d5e4e3;
+}
+
+
+.btn-default:focus, .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
+  color: #fff;
+  background-color: #84b067;
+}
+
+
+.list-group-item{
+  background-color:#FDFAD5 ;
+  color: #5F5B57;
+  text-transform: uppercase;
+}
+
+ul.list-group{
+  width: 30%;
+
+}
+
+.glyphicon-trash{
+  color: #faa5aa;
+}
+
+.glyphicon-edit{
+  color: #5F5B57;
+}
+.addCat{
+  border: none;
+  border-radius: 2px;
+  color: white;
+  background-color: #84b067;
+}
+
+.btn-default:focus{
+outline: none;
+}
+
+.btn-default.submit{
+  border: none;
+  border-radius: 2px;
+  color: white;
+  background-color: #84b067;
+}
+
+.btn-default.cancel{
+  border: none;
+  border-radius: 2px;
+  color: #5F5B57;
+  background-color: #d5e4e3;
+  text-transform: none;
+  font-family: Avenir;
+  font-style: normal;
+
+}
+
+.btn-default.delete{
+  background-color: transparent;
+}
+
+.btn-default.edit{
+  background-color: transparent;
+}
+
+.modal-title{
+  font-family: Avenir;
+}
+
+.form-group{
+  font-family: Avenir;
+}
+
+.list-group-item.addCategory{
+  background-color: transparent;
+  border: none;
+  margin-left: -15px;
+}
+
+.list-group-item.category{
+  background-color: #d5e4e3;
+  border: none;
+  border-top: 1px dotted rgba(200, 200, 200, 1);
+}

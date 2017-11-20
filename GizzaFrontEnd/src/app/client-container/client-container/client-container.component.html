@@ -1,0 +1,12 @@
+<div class="container-fluid background-img">
+  <div *ngIf="(router.url.indexOf('/purchase/user') == -1)">
+    <app-header></app-header>
+    <div *ngIf="(router.url != '/purchase/shopping-cart-validation')">
+      <app-client-header></app-client-header>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+  <div *ngIf="(router.url.indexOf('/purchase/user') == -1)">
+    <app-footer></app-footer>
+  </div>
+</div>

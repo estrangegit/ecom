@@ -1,0 +1,104 @@
+<div class="container">
+  <div id="validationPage">
+    <div class="jumbotron">
+      <div class="row title">
+        <h2 class="text-center">Validez votre panier</h2>
+      </div>
+      <div class="row text-center" *ngIf="shoppingCartDataService.getShoppingItems().length == 0">
+        Vous n'avez aucun article dans votre panier
+      </div>
+      <div>
+        <ul class="list-group">
+          <li class="list-group-item" *ngFor="let shoppingItem of shoppingCartDataService.getShoppingItems()">
+            <div class="row">
+              <div class="col-lg-offset-1
+                          col-lg-10
+                          col-md-offset-1
+                          col-md-10
+                          col-sm-12
+                          col-xs-12">
+                <div class="col-sm-4 text-center">
+                  <button type="button"
+                          class="btn btn-default"
+                          (click)="removeOneShoppingItem(shoppingItem.item)"
+                          [disabled]="shoppingItem.quantity == 0">
+                    <span class="glyphicon glyphicon-minus"></span>
+                  </button>
+                  <span>{{shoppingItem.quantity}}</span>
+                  <button type="button" class="btn btn-default" (click)="addOneShoppingItem(shoppingItem.item)">
+                    <span class="glyphicon glyphicon-plus"></span>
+                  </button>
+                </div>
+                <div class="col-sm-4 text-center"> <span class="itemTitle">{{shoppingItem.item.title}}</span></div>
+                <div class="col-sm-4 text-center">
+                  {{shoppingItem.item.price * shoppingItem.quantity}} €
+                </div>
+              </div>
+            </div>
+            <hr>
+          </li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h3 class="text-center">Total: {{shoppingCartDataService.totalPrice()}} €</h3>
+        </div>
+      </div>
+      <div class="row">
+        <hr />
+      </div>
+      <div class="row coupon">
+        <form *ngIf="userDataService.getReductionCode().length == 0; else elseDivBlock">
+          <div class="row">
+            <div class="col-lg-offset-3
+                        col-lg-3
+                        col-md-offset-2 col-md-4
+                        col-sm-offset-1 col-sm-5
+                        col-xs-offset-1 col-xs-7
+                        text-center">
+              <input type="text" class="form-control"
+                     #couponCode name="couponCode"
+                     placeholder="Code de réduction">
+            </div>
+            <div class="col-lg-3
+                        col-xs-4
+                        text-center">
+              <button type="button" (click)="onCouponSubmit(couponCode.value)" class="btn btn-default reduction">Valider</button>
+            </div>
+          </div>
+        </form>
+        <ng-template #elseDivBlock>
+          <div class="row">
+            <div class="col-lg-offset-3
+                        col-lg-3
+                        col-md-offset-2 col-md-4
+                        col-sm-offset-1 col-sm-5
+                        col-xs-offset-1 col-xs-7
+                        text-center">
+              <span>Réduction: {{userDataService.getReductionCode()}}</span>
+            </div>
+            <div class="col-lg-3
+                        col-xs-4
+                        text-center">
+              <button type="button" (click)="modifyCoupon()" class="btn btn-default reduction">Modifier</button>
+            </div>
+          </div>
+        </ng-template>
+        <hr/>
+      </div>
+      <div class="row text-center">
+        <button type="button"
+                (click)="order()"
+                class="btn btn-default"
+                [disabled]="shoppingCartDataService.totalPrice() == 0">
+          Commander
+        </button>
+        <button type="button"
+                (click)="carryOnPurchase()"
+                class="btn btn-default">
+          Continuer les achats
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

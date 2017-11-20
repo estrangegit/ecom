@@ -1,0 +1,15 @@
+nav ul a {
+  font-size: 18px;
+  font-family: Avenir;
+  color: #5F5B57;
+}
+.brand {
+  font-size: 23px;
+}
+li>a.active {
+  border-bottom: solid 0px #5d5d5d;
+  background: #acc884;
+}
+div.navbar-header a{
+  display: none;
+}

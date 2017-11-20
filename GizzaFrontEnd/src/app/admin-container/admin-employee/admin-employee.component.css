@@ -1,0 +1,48 @@
+.list-group-item.addEmploye{
+  background-color: transparent;
+  margin-left: -15px;
+  border: none;
+}
+
+.container{
+  font-family: Avenir;
+}
+
+.btn-default.addEmploye:active,.btn-default.addEmploye:focus{
+  outline: none;
+}
+.list-group-item.employes{
+  background-color: transparent;
+  border: none;
+}
+.btn-default.delete, .btn-default.edit{
+  background-color: transparent;
+  border: none;
+}
+
+.glyphicon-trash{
+  color: #faa5aa;
+}
+.glyphicon-edit{
+  color: #5F5B57;
+}
+.tableContainer{
+  border: none;
+  border-radius: 0px;
+  font-family: Avenir;
+  color: #5F5B57;
+}
+
+.tableHead{
+  font-size: 15px;
+  font-family: AvenirBold;
+}
+
+.panel-heading{
+  background-color: #AAB6B5;
+  border: none;
+}
+.panel.panel-primary.filterable{
+  border: none;
+  border-radius: 0px;
+}

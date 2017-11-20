@@ -1,0 +1,27 @@
+@import 'variables';
+@import '../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap';
+@font-face {
+  font-family: Georgia;
+  src: url('/assets/fonts/Georgia.ttf') format('ttf');
+}
+@font-face {
+  font-family: Menlo;
+  font-style: normal;
+  src: url('/assets/fonts/Menlo-Regular.ttf') format('ttf');
+}
+@font-face {
+  font-family: Myriad;
+  font-style: normal;
+  src: url('/assets/fonts/MyriadPro-Light.otf');
+}
+@font-face {
+  font-family: Avenir;
+  font-style: normal;
+  src: url('/assets/fonts/Avenir/AvenirLTStd-Book.otf');
+}
+
+@font-face {
+  font-family: AvenirBold;
+  font-style: normal;
+  src: url('/assets/fonts/Avenir/AvenirLTStd-Medium.otf');
+}
